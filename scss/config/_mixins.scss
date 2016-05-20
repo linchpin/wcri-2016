@@ -1,0 +1,24 @@
+/**
+ * Sass Mixins
+ *
+ * 01. Clearfix
+ */
+
+/**
+ * 01. Clearfix
+ *
+ * Make DOM recognize real estate of parent with floated children.
+ */
+@mixin clearfix {
+	*zoom: 1;
+
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}

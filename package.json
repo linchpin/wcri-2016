@@ -1,0 +1,19 @@
+{
+  "name": "WCRI-2016",
+  "title": "WCRI-2016",
+  "description": "Gulp set-up for WordCamp RI 2016 styles",
+  "version": "0.1.0",
+  "homepage": "http://2016.rhodeisland.wordcamp.org",
+  "author": {
+    "name": "Maxwell Morgan",
+    "email": "mmorgan@linchpinagency.com",
+    "url": "http://linchpin.agency"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "keywords": []
+}

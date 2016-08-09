@@ -73,6 +73,14 @@
 			}
 		}
 
+		.menu-item-has-children {
+			a:after {
+				content: '\f140';
+
+				font-family: 'dashicons';
+			}
+		}
+
 		a {
 			padding: 0;
 		}

@@ -1,0 +1,51 @@
+/**
+ * 01. Head tags
+ * 02. Links
+ */
+
+
+/**
+ * 01. Head tags
+ */
+
+
+/**
+ * 02. Links
+ */
+a {
+	color: $primary;
+
+	&:visited {
+		color: $primary;
+	}
+
+	&:focus,
+	&:active,
+	&:hover {
+		color: $dark;
+	}
+}
+
+.button {
+	background-color: $primary;
+	border-radius: 2rem;
+	color: white;
+	display: inline-block;
+	margin: .5rem 0 0;
+	padding: 1rem 2.5rem;
+
+	&:visited {
+		color: white;
+	}
+}
+
+/**
+ * 03. Helpers
+ */
+.text-right {
+	text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}

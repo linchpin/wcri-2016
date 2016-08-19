@@ -251,12 +251,14 @@
 					position: fixed;
 					right: 0;
 
+					~ .menu-main-menu-container,
 					~ .menu-primary-navigation-container {
 						left: 0;
 					}
 				}
 			}
 
+			.menu-main-menu-container,
 			.menu-primary-navigation-container {
 				background: $light;
 				display: block !important;

@@ -2,6 +2,7 @@
  * Sass Mixins
  *
  * 01. Clearfix
+ * 02. Button
  */
 
 /**
@@ -21,4 +22,57 @@
 	&:after {
 		clear: both;
 	}
+}
+
+
+/**
+ * 02. Button
+ */
+@mixin button( $type: 'primary', $size: 'normal' ) {
+	// Colors
+	@if ( $type == 'primary' ) {
+		background: $primary;
+		color: white;
+
+		&:visited {
+			color: white;
+		}
+
+		&:hover {
+			background: scale-color( $primary, $lightness: -15% );
+		}
+	}
+
+	@if ( $type == 'accent' ) {
+		background: white;
+		color: $accent;
+
+		&:visited {
+			color: $accent;
+		}
+
+		&:hover {
+			background: $light-grey;
+			color: $accent;
+		}
+	}
+
+	// Sizing
+	@if ( $size == 'normal' ) {
+		padding: 1rem 2.5rem;
+	}
+
+	@if ( $size == 'medium' ) {
+		padding: .5rem 1.25rem;
+	}
+
+	@if ( $size == 'small' ) {
+		padding: 0 1rem;
+	}
+
+	border-radius: 2rem;
+	display: inline-block;
+	margin: .5rem 0 0;
+
+	transition: 250ms background-color ease-in-out;
 }

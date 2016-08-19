@@ -1,0 +1,28 @@
+/**
+ * 01. Tickets Table
+ */
+
+
+/**
+ * 01. Tickets Table
+ */
+$table-border: $dark;
+
+.tix_tickets_table {
+	background: scale-color( $light-grey, $lightness: 50% );
+	border: 1px solid $table-border;
+	color: $dark;
+
+	th,
+	td {
+		padding: .5rem 1rem;
+	}
+
+	td {
+		border-top: 1px solid $table-border;
+
+		+ td {
+			border-left: 1px solid $table-border;
+		}
+	}
+}

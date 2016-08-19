@@ -352,10 +352,6 @@ a.post-thumbnail:hover,a.post-thumbnail:focus {
 	font-weight: 900;
 }
 
-.entry-content h1:first-child,.entry-content h2:first-child,.entry-content h3:first-child,.entry-content h4:first-child,.entry-content h5:first-child,.entry-content h6:first-child,.entry-summary h1:first-child,.entry-summary h2:first-child,.entry-summary h3:first-child,.entry-summary h4:first-child,.entry-summary h5:first-child,.entry-summary h6:first-child,.comment-content h1:first-child,.comment-content h2:first-child,.comment-content h3:first-child,.comment-content h4:first-child,.comment-content h5:first-child,.comment-content h6:first-child,.textwidget h1:first-child,.textwidget h2:first-child,.textwidget h3:first-child,.textwidget h4:first-child,.textwidget h5:first-child,.textwidget h6:first-child {
-	margin-top: 0;
-}
-
 .post-navigation .post-title,.entry-title,.comments-title {
 	-webkit-hyphens: auto;
 	-ms-hyphens: auto;
@@ -658,7 +654,7 @@ body:not(.search-results) .entry-summary .aligncenter {
 	}
 }
 
-@media screen and (min-width: 56.875em) {
+@media screen and (min-width: 600px) {
 	.site-header-main {
 		-ms-flex-align: start;
 		align-items: flex-start;
@@ -673,10 +669,6 @@ body:not(.search-results) .entry-summary .aligncenter {
 		display: block;
 		-ms-flex: 0 1 auto;
 		flex: 0 1 auto;
-	}
-
-	.main-navigation {
-//		margin: 0 -.875em;
 	}
 
 	.main-navigation .primary-menu,.main-navigation .primary-menu>li {
@@ -1121,11 +1113,6 @@ body:not(.search-results) .entry-summary .aligncenter {
 		margin-top: -1.105263158em;
 	}
 
-	body:not(.search-results) article:not(.type-page) .entry-content {
-		float: right;
-		width: 71.42857144%;
-	}
-
 	body:not(.search-results) article:not(.type-page) .entry-content>blockquote.alignleft.below-entry-meta {
 		margin-left: -40%;
 		width: calc(60% - 1.4736842105em);
@@ -1153,11 +1140,6 @@ body:not(.search-results) .entry-summary .aligncenter {
 
 	body:not(.search-results) article:not(.type-page) .entry-footer>span:not(:last-child):after {
 		display: none;
-	}
-
-	.single .byline,.full-size-link,body:not(.search-results).group-blog .byline,body:not(.search-results) .entry-format,body:not(.search-results) .cat-links,body:not(.search-results) .tags-links,body:not(.search-results) article:not(.sticky) .posted-on,body:not(.search-results) article:not(.type-page) .comments-link,body:not(.search-results) article:not(.type-page) .entry-footer .edit-link {
-		display: block;
-		margin-bottom: .5384615385em;
 	}
 
 	body:not(.search-results) article:not(.type-page) .entry-footer>span:last-child {
@@ -1266,10 +1248,6 @@ body:not(.search-results) .entry-summary .aligncenter {
 	body:not(.search-results) .entry-summary h4,body:not(.search-results) .entry-summary h5,body:not(.search-results) .entry-summary h6 {
 		margin-top: 3.684210526em;
 		margin-bottom: 1.842105263em;
-	}
-
-	body:not(.search-results) .entry-summary h1:first-child,body:not(.search-results) .entry-summary h2:first-child,body:not(.search-results) .entry-summary h3:first-child,body:not(.search-results) .entry-summary h4:first-child,body:not(.search-results) .entry-summary h5:first-child,body:not(.search-results) .entry-summary h6:first-child {
-		margin-top: 0;
 	}
 
 	body:not(.search-results) .entry-summary .alignleft {

@@ -1,0 +1,46 @@
+/**
+ * 01. Sponsor List
+ * 02. Single Sponsor
+ */
+
+
+/**
+ * 01. Sponsor List
+ */
+@media screen and (min-width: 600px) {
+	.sponsor-level-title {
+		background-color: $primary;
+		letter-spacing: 2px;
+		margin: {
+			left: -4.5455%;
+			right: -4.5455%;
+		};
+		padding: 0 4.5455%;
+	}
+}
+
+
+/**
+ * 02. Single Sponsor
+ */
+.wcb_sponsor {
+	@include clearfix;
+
+	@media screen and ( min-width: 768px ) {
+		.sponsor-title {
+			float: left;
+			width: 250px;
+		}
+
+		.sponsor-description {
+			float: left;
+			margin-left: 50px;
+			width: calc(100% - 300px);
+		}
+	}
+
+	+ .wcb_sponsor {
+		border-top: 1px solid;
+		margin-top: 2rem;
+	}
+}

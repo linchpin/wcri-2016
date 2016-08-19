@@ -7,13 +7,22 @@
 /**
  * 01. Head tags
  */
+h1, h2, h3, h4, h5, h6 {
+	color: $accent;
+	font-family: $headline-font !important;
+	letter-spacing: 2px;
 
+	a {
+		font: inherit;
+	}
+}
 
 /**
  * 02. Links
  */
 a {
 	color: $primary;
+	word-wrap: break-word;
 
 	&:visited {
 		color: $primary;
@@ -48,4 +57,12 @@ a {
 
 .text-center {
 	text-align: center;
+}
+
+.left {
+	float: left !important;
+}
+
+.right {
+	float: right !important;
 }

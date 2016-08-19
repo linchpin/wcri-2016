@@ -21,6 +21,16 @@ html {
 	}
 }
 
+body {
+	background-color: $light-grey;
+
+	@media screen and ( min-width: $medium-up ) {
+		&:not(.home) {
+			padding-top: $nav-height + 16px;
+		}
+	}
+}
+
 .left {
 	float: left;
 }
@@ -35,4 +45,16 @@ html {
 		left: auto;
 		right: auto;
 	};
+}
+
+#nav-bottom {
+	margin-bottom: 0 !important;
+	padding-bottom: 2rem;
+}
+
+input[type="submit"] {
+	@include button( $size: 'small' );
+
+	border: 1px solid $dark;
+	box-shadow: none;
 }

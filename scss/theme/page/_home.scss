@@ -1,6 +1,7 @@
 /**
  * 01. Base
  * 02. Hero
+ * 03. Content
  */
 
 
@@ -10,13 +11,47 @@
 body.home {
 	padding-top: 800px;
 	padding-top: 100vh;
+
+	// Temporary, will be replaced with full-width bands
+	.site-content {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 0 2rem;
+		width: 100%;
+	}
+
+	.post {
+		@include clearfix;
+
+		margin-bottom: 4rem;
+
+		.entry-content {
+			margin-top: 0;
+		}
+
+		@media screen and ( min-width: 900px ) {
+			.entry-header {
+				float: left;
+				width: 25%;
+			}
+
+			.entry-content {
+				float: right;
+				width: 75%;
+			}
+
+			footer.entry-meta {
+				text-align: right;
+			}
+		}
+	}
 }
 
 /**
  * 02. Hero
  */
 #wcri-hero {
-	background-color: #f2f2f2;
+	background-color: $light-grey;
 	height: 800px;
 	height: 100vh;
 	overflow: hidden;
@@ -29,23 +64,30 @@ body.home {
 }
 
 #hero-content {
-	margin-top: -50px;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 10;
 
 	.hero-content-logo {
-		background-color: #f2f2f2;
+		background-color: $light-grey;
 		border-radius: 50%;
 		height: auto;
 		max-width: 300px;
 		width: 80%;
 	}
+
+	@media screen and ( max-width: 767px ) {
+		top: 60%;
+
+		.hero-content-logo {
+			display: none;
+		}
+	}
 }
 
 #clouds {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -97,7 +139,7 @@ body.home {
 
 #making-waves {
 	height: 99px;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -116,7 +158,9 @@ body.home {
 		bottom: 0;
 
 		@if ( $animations-on ) {
-			animation: 24s wave $global-easing infinite alternate;
+			@media screen and ( min-width: 768px ) {
+				animation: 24s wave $global-easing infinite alternate;
+			}
 		}
 
 		z-index: 3;
@@ -140,7 +184,9 @@ body.home {
 		z-index: 1;
 
 		@if ( $animations-on ) {
-			animation-duration: 20s;
+			@media screen and ( min-width: 768px ) {
+				animation-duration: 20s;
+			}
 		}
 	}
 
@@ -167,7 +213,9 @@ body.home {
 		};
 
 		@if ( $animations-on ) {
-			animation: 16s boat $global-easing infinite alternate;
+			@media screen and ( min-width: 768px ) {
+				animation: 16s boat $global-easing infinite alternate;
+			}
 		}
 
 		z-index: 2;
@@ -183,10 +231,61 @@ body.home {
 			left: 0;
 		};
 
+		img {
+			height: 144px;
+			width: auto;
+		}
+
+		.hashtag {
+			color: $accent;
+			font: {
+				family: $headline-font;
+				size: 24px;
+			};
+		    height: 90px;
+		    letter-spacing: 2px;
+		    line-height: 90px;
+		    text: {
+			    align: center;
+			    decoration: none;
+			};
+			width: 90px;
+
+			position: absolute;
+		    left: 0;
+		    top: 0;
+		}
+
 		@if ( $animations-on ) {
-			animation: 12s whale $global-easing infinite alternate;
+			@media screen and ( min-width: 768px ) {
+				animation: 12s whale $global-easing infinite alternate;
+			}
 		}
 
 		z-index: 2;
+	}
+}
+
+/**
+ * 03. Content
+ */
+#after-header-widgets.front-page {
+	+ #main {
+		background-color: $light-grey;
+		margin-top: 80px;
+		position: relative;
+		z-index: 18;
+
+		&:before {
+			content: '';
+
+			background-image: linear-gradient( to bottom, rgba( $light-grey, 0 ), rgba( $light-grey, 1 ) );
+			height: 80px;
+
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: -80px;
+		}
 	}
 }

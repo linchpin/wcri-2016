@@ -4,17 +4,18 @@
  * 01. Colors
  * 02. Fonts
  * 03. Sizes
- * 04. Global
+ * 04. Grid
+ * 05. Global
  */
 
 
 // 01. Colors
-$light-grey: #f2f2f2;
-$plantation: #274c4f;
-$blue-chill: #3a8791;
+$light-grey:    #f2f2f2;
+$plantation:    #274c4f;
+$blue-chill:    #3a8791;
 $fountain-blue: #59b3b5;
-$jagged-ice: #c1e4e5;
-$yellow-sea: #fa9e3c;
+$jagged-ice:    #c1e4e5;
+$yellow-sea:    #fa9e3c;
 
 $primary: $fountain-blue;
 $accent:  $yellow-sea;
@@ -24,11 +25,21 @@ $darkest: $plantation;
 
 // 02. Fonts
 $headline-font: "abolition-soft",sans-serif;
-$body-font: "expo-serif-pro",sans-serif;
+$body-font:     "expo-serif-pro",sans-serif;
 
 // 03. Sizes
 $nav-height: 88px;
+$logo-height: $nav-height - 12px;
+$logo-img-height: $logo-height - 20px;
 
-// 04. Global
+$logo-mobile-adjust: 40px;
+
+/**
+ * 04. Grid
+ */
+$large-up:  1024px;
+$medium-up: 768px;
+
+// 05. Global
 $global-easing: ease-in-out;
-$animations-on: false;
+$animations-on: true;

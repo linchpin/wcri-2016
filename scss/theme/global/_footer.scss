@@ -1,0 +1,41 @@
+/**
+ * 01. Base
+ * 02. Home
+ */
+
+
+/**
+ * 01. Base
+ */
+.site-footer {
+	margin-bottom: 2rem;
+	padding: 0 2rem;
+}
+
+/**
+ * 02. Home
+ */
+body.home {
+	.site-footer {
+		background: $light-grey;
+		margin-bottom: 200px;
+		position: relative;
+
+		&:after {
+			content: '';
+
+			height: 200px;
+			background-image: linear-gradient( to bottom, rgba($light-grey, 1), rgba($light-grey, 0) );
+
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 100%;
+		}
+	}
+}
+
+.site-info {
+	text-align: center;
+	width: 100%;
+}

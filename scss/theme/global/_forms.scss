@@ -1,0 +1,41 @@
+/**
+ * 01. Global
+ */
+
+
+/**
+ * 01. Global
+ */
+form.contact-form {
+	background: $light;
+	border: 4px solid $light-grey;
+	box-shadow: 0 0 0 4px $light;
+	padding: 1rem;
+
+	br:first-child {
+		display: none;
+	}
+
+	label {
+		color: $dark;
+
+		span {
+			color: $accent;
+		}
+	}
+
+	input,
+	textarea {
+		&:not([type="submit"]) {
+			background: white;
+			border: 1px solid scale-color( $light-grey, $lightness: -20% );
+			border-radius: 0;
+			max-width: 100% !important;
+			width: 100% !important;
+		}
+	}
+
+	.contact-submit {
+		margin-bottom: 0;
+	}
+}

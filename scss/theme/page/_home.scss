@@ -12,8 +12,12 @@ body.home {
 	padding-top: 800px;
 	padding-top: 100vh;
 
-	// Temporary, will be replaced with full-width bands
 	.site-content {
+		// padding: 0;
+
+		/**
+		 * Keep these styles until the new homepage layout is live
+		 */
 		max-width: 1280px;
 		margin: 0 auto;
 		padding: 0 2rem;
@@ -269,6 +273,19 @@ body.home {
 /**
  * 03. Content
  */
+#homepage-buckets {
+	.bucket-content {
+		@include clearfix;
+
+		background-color: white;
+		padding: 1rem;
+
+		h2 {
+			margin: 1rem 0;
+		}
+	}
+}
+
 #after-header-widgets.front-page {
 	+ #main {
 		background-color: $light-grey;

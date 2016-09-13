@@ -1,6 +1,7 @@
 /**
  * 01. Base
  * 02. Home
+ * 03. Sponsors
  */
 
 
@@ -39,3 +40,87 @@ body.home {
 	text-align: center;
 	width: 100%;
 }
+
+
+/**
+ * 03. Sponsors
+ */
+
+
+#footer-widgets {
+	width: 100%;
+}
+
+h1.widget-title {
+	text-align: center;
+}
+
+.sponsor-level {
+	width: 100%
+}
+
+h4.sponsor-level-title {
+	text-align: center;
+	color: #59b3b5;
+	background-color: transparent;
+	font-size: 15px;
+}
+
+.sponsor-level {
+		
+	text-align: center;
+	padding-bottom: 30px;
+
+	.sponsor-logo {
+		display: inline-block !important;
+		padding: 10px 20px;
+	    vertical-align: middle;
+
+	}
+
+}
+
+.gold {
+
+	.sponsor-logo {
+		min-height: 70px;
+    	max-width: 350px;
+
+	}
+
+}
+
+.silver {
+
+	.sponsor-logo {
+		min-height: 50px;
+    	max-width: 300px;
+
+	}
+
+}
+
+
+.bronze {
+
+	.sponsor-logo {
+		min-height: 30px;
+    	max-width: 200px;
+
+	}
+
+}
+
+
+.small-business-sponsors {
+
+	.sponsor-logo {
+		min-height: 20px;
+    	max-width: 150px;
+
+	}
+
+}
+
+
+

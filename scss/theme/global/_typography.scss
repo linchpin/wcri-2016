@@ -1,6 +1,7 @@
 /**
  * 01. Head tags
  * 02. Links
+ * 03. Helpers
  */
 
 
@@ -78,4 +79,20 @@ a {
 
 .right {
 	float: right !important;
+}
+
+p.lead {
+	font-size: 1.125rem;
+}
+
+.color-accent {
+	color: $accent;
+}
+
+.color-primary {
+	color: $primary;
+}
+
+.color-secondary {
+	color: $secondary;
 }

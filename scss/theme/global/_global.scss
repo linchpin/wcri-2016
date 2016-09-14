@@ -8,6 +8,11 @@
 	'forms'
 ;
 
+.edit-link {
+	display: block;
+	clear: both;
+}
+
 * {
 	font-family: $body-font;
 }
@@ -57,4 +62,13 @@ input[type="submit"] {
 
 	border: 1px solid $dark;
 	box-shadow: none;
+}
+
+#content > article > .entry-header {
+	@include row;
+
+	> .entry-title {
+		@include column;
+		width: 100%;
+	}
 }

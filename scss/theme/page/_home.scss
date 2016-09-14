@@ -315,10 +315,13 @@ body.home {
 	.bucket {
 		background: white;
 		border: 15px solid $light-grey;
-		display: table-cell;
-		height: 100%;
-		width: 33.333333%;
-		width: calc(100%/3);
+
+		@media screen and ( min-width: 1000px ) {
+			display: table-cell;
+			height: 100%;
+			width: 33.333333%;
+			width: calc(100%/3);
+		}
 
 		p {
 			margin: 0;
@@ -363,8 +366,10 @@ body.home {
 	}
 
 	.venue {
-		display: table-cell;
-		float: none !important;
+		@media screen and ( min-width: $medium-up ) {
+			display: table-cell;
+			float: none !important;
+		}
 	}
 
 	.wcri-venue,

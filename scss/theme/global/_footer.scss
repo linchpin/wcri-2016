@@ -8,6 +8,44 @@
 /**
  * 01. Base
  */
+#colophon {
+	padding: 0;
+}
+
+#footer-widgets {
+	@include row;
+
+	padding: 0 2rem;
+}
+
+#footer-widget-1,
+#footer-widget-2,
+#footer-widget-4 {
+	@include column;
+
+	.widget {
+		h1, h2 {
+			font-size: 1.75rem;
+			margin-top: 0;
+		}
+	}
+}
+
+#footer-widget-1,
+#footer-widget-2 {
+	@media screen {
+		width: 100%;
+	}
+
+	@media screen and ( min-width: $medium-up ) {
+		width: 50%;
+	}
+}
+
+#footer-widget-4 {
+	width: 100%;
+}
+
 .site-footer {
 	margin-bottom: 2rem;
 }
@@ -44,14 +82,10 @@ body.home {
 /**
  * 03. Sponsors
  */
-
-
-#footer-widgets {
-	width: 100%;
-}
-
-h1.widget-title {
-	text-align: center;
+.wcb_widget_sponsors {
+	.widget-title {
+		text-align: center;
+	}
 }
 
 .sponsor-level {
@@ -67,6 +101,154 @@ h4.sponsor-level-title {
 
 .sponsor-level {
 		
+	text-align: center;
+	padding-bottom: 30px;
+
+	.sponsor-logo {
+		display: inline-block !important;
+		padding: 10px 20px;
+	    vertical-align: middle;
+
+	}
+
+}
+
+.gold {
+
+	.sponsor-logo {
+		min-height: 70px;
+    	max-width: 350px;
+
+	}
+
+}
+
+.silver {
+
+	.sponsor-logo {
+		min-height: 50px;
+    	max-width: 300px;
+
+	}
+
+}
+
+
+.bronze {
+
+	.sponsor-logo {
+		min-height: 30px;
+    	max-width: 200px;
+
+	}
+
+}
+
+
+.small-business-sponsors {
+
+	.sponsor-logo {
+		min-height: 20px;
+    	max-width: 150px;
+
+	}
+
+}
+
+
+
+/**
+ * 01. Base
+ * 02. Home
+ * 03. Sponsors
+ */
+
+
+/**
+ * 01. Base
+ */
+#footer-widgets {
+	@include row;
+
+	padding: 0 2rem;
+}
+
+#footer-widget-1,
+#footer-widget-2,
+#footer-widget-3 {
+	@include column;
+}
+
+#footer-widget-1,
+#footer-widget-2 {
+	@media screen {
+		width: 100%;
+	}
+
+	@media screen and ( min-width: $medium-up ) {
+		width: 50%;
+	}
+}
+
+#footer-widget-3 {
+	width: 100%;
+}
+
+.site-footer {
+	margin-bottom: 2rem;
+}
+
+/**
+ * 02. Home
+ */
+body.home {
+	.site-footer {
+		background: $light-grey;
+		margin-bottom: 200px;
+		position: relative;
+
+		&:after {
+			content: '';
+
+			height: 200px;
+			background-image: linear-gradient( to bottom, rgba($light-grey, 1), rgba($light-grey, 0) );
+
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 100%;
+		}
+	}
+}
+
+.site-info {
+	text-align: center;
+	width: 100%;
+}
+
+
+/**
+ * 03. Sponsors
+ */
+.wcb_widget_sponsors {
+	.widget-title {
+		text-align: center;
+	}
+}
+
+.sponsor-level {
+	width: 100%
+}
+
+h4.sponsor-level-title {
+	text-align: center;
+	color: #59b3b5;
+	background-color: transparent;
+	font-size: 15px;
+}
+
+.sponsor-level {
+
 	text-align: center;
 	padding-bottom: 30px;
 

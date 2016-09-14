@@ -3,6 +3,7 @@
  *
  * 01. Clearfix
  * 02. Button
+ * 03. Grid Mixins
  */
 
 /**
@@ -75,4 +76,26 @@
 	margin: .5rem 0 0;
 
 	transition: 250ms background-color ease-in-out;
+}
+
+
+/**
+ * 03. Grid Mixins
+ */
+@mixin row() {
+	@include clearfix;
+
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+
+	&.extend {
+		max-width: 100%;
+	}
+}
+
+@mixin column() {
+	float: left;
+	padding: 0 1rem;
 }

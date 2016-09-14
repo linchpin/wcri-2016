@@ -32,7 +32,7 @@ $table-border: $dark;
 
 	.tickets-message {
 		background-color: #59b3b5;
-		height: 371px; 
+		height: 350px; 
 	    color: #fff;
 	    position: relative;
 	    vertical-align: middle;
@@ -40,8 +40,13 @@ $table-border: $dark;
 
 }
 
-.v-center.blueBox {
-	padding-top: 60px;
+div.v-center.blueBox {
+	padding-top: 40px;
+
+}
+
+#tix {
+	padding-top: 40px !important;
 }
 
 

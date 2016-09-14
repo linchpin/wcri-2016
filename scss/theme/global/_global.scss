@@ -65,10 +65,19 @@ input[type="submit"] {
 }
 
 #content > article > .entry-header {
-	@include row;
+	@include clearfix;
+
+	margin: 0 -4.5455%;
+	background: {
+		image: url(https://2016.rhodeisland.wordcamp.org/files/2016/08/waves-full@2x.png);
+		position: 0 100%;
+		size: 1055px 89px;
+		repeat: repeat-x;
+	};
 
 	> .entry-title {
-		@include column;
-		width: 100%;
+		@include row;
+
+		margin-bottom: 109px;
 	}
 }

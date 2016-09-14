@@ -20,6 +20,7 @@
 
 #footer-widget-1,
 #footer-widget-2,
+#footer-widget-3,
 #footer-widget-4 {
 	@include column;
 
@@ -32,13 +33,15 @@
 }
 
 #footer-widget-1,
-#footer-widget-2 {
+#footer-widget-2,
+#footer-widget-3 {
 	@media screen {
 		width: 100%;
 	}
 
 	@media screen and ( min-width: $medium-up ) {
-		width: 50%;
+		width: 33.333333%;
+		width: calc(100%/3);
 	}
 }
 

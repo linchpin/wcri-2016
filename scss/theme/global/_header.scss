@@ -158,14 +158,19 @@
 	    padding: .25rem 0;
 
 		a {
-			@include button('accent', 'small');
+			@include button();
 
+			background: $accent;
+			border-radius: 60px;
+			box-shadow: 0 0 0 4px white, 0 0 0 8px $light;
+			color: white;
 			float: right;
-			height: 1.5rem;
-			line-height: 1.5rem;
-			margin: 0;
-			padding-top: 0;
-			padding-bottom: 0;
+			font-size: 18px;
+			height: 66px;
+			line-height: 66px;
+			margin: 4px 0 0;
+			padding: 0 2rem;
+			text-align: center;
 		}
 	}
 }

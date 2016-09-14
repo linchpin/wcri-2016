@@ -49,6 +49,14 @@ body.home {
 			}
 		}
 	}
+
+	.hentry {
+		margin-bottom: 0;
+	}
+
+	#comments {
+		display: none;
+	}
 }
 
 /**
@@ -79,6 +87,11 @@ body.home {
 		height: auto;
 		max-width: 300px;
 		width: 80%;
+	}
+
+	.button {
+		font-size: 18px;
+		letter-spacing: 2px;
 	}
 
 	@media screen and ( max-width: 767px ) {
@@ -295,6 +308,26 @@ body.home {
 }
 
 #homepage-buckets {
+	display: table;
+	margin-bottom: 15px;
+
+	.bucket {
+		background: white;
+		border: 15px solid $light-grey;
+		display: table-cell;
+		height: 100%;
+		width: 33.333333%;
+		width: calc(100%/3);
+
+		p {
+			margin: 0;
+
+			+ p {
+				margin-top: 10px;
+			}
+		}
+	}
+
 	.bucket-content {
 		@include clearfix;
 
@@ -328,6 +361,11 @@ body.home {
 		margin-top: 0;
 	}
 
+	.venue {
+		display: table-cell;
+		float: none !important;
+	}
+
 	.wcri-venue,
 	.after-party-venue {
 		background: {
@@ -341,6 +379,8 @@ body.home {
 		position: relative;
 
 		.overlay {
+			background-color: rgba( white, .85 );
+
 			position: absolute;
 			left: 0;
 			right: 0;
@@ -357,17 +397,9 @@ body.home {
 
 	.wcri-venue {
 		background-image: url("https://2016.rhodeisland.wordcamp.org/files/2016/09/newenglandtech3.jpg");
-
-		.overlay {
-			background-color: rgba( $light, .75 );
-		}
 	}
 
 	.after-party-venue {
 		background-image: url("https://2016.rhodeisland.wordcamp.org/files/2016/08/IMG_9691.jpg");
-
-		.overlay {
-			background-color: rgba( white, .85 );
-		}
 	}
 }

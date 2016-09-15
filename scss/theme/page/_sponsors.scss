@@ -1,6 +1,7 @@
 /**
  * 01. Sponsor List
  * 02. Single Sponsor
+ * 03. Sponsor Table
  */
 
 
@@ -40,7 +41,53 @@
 	}
 
 	+ .wcb_sponsor {
-		border-top: 1px solid;
+		border-top: 1px solid #fff;
 		margin-top: 2rem;
 	}
 }
+
+
+/**
+ * 03. Sponsor Table
+ */
+
+.sponsors {
+	
+	.sponsor-level {
+
+		border: solid 2px #59b3b5;
+		margin-top: 50px;
+			
+		h2.sponsor-level-title {
+
+			color: #fff;
+		    margin: 0px;
+		    padding: 20px;
+
+		}
+
+		.sponsor {
+			margin-top: 0px !important;
+
+		}
+
+	}
+}
+
+.sponsor-description {
+	p {
+		text-align: left;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

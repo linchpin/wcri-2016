@@ -41,7 +41,7 @@
 	}
 
 	+ .wcb_sponsor {
-		border-top: 1px solid #fff;
+		border-top: 1px solid $light-grey;
 		margin-top: 2rem;
 	}
 }
@@ -52,6 +52,32 @@
  */
 
 .wcorg-sponsors {
+
+	.wcorg-sponsor-description {
+
+	    border-bottom: solid 1px $light-grey;
+
+		img {
+			float: left;
+		    max-width: 100%;
+		    padding: 30px;
+		}
+
+		@media screen and (min-width: 64em) {
+			
+			img {
+		   		max-width: 25%;
+
+			}
+
+		@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+			
+			img {
+		   		max-width: 40%;
+
+			}
+		}
+	}
 	
 	[class*="wcorg-sponsor-level"] {
 
@@ -59,26 +85,28 @@
 		margin-top: 50px;
 			
 		h2 {
-
+			background-color: $fountain-blue;
 			color: $light-grey;
 		    margin: 0px;
 		    padding: 20px;
+		    text-align: center;
 
 		}
 
 		.wcorg-sponsor {
-			margin-top: 0px !important;
-
+			margin: 40px;
+			
 		}
-
 	}
 }
 
 .wcorg-sponsor-description {
+
 	p {
 		text-align: left;
 
 	}
+
 }
 
 

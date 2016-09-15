@@ -53,7 +53,7 @@
 
 .wcorg-sponsors {
 	
-	[class=*"wcorg-sponsor-level"] {
+	[class*="wcorg-sponsor-level"] {
 
 		border: solid 2px $fountain-blue;
 		margin-top: 50px;

@@ -63,6 +63,7 @@
 		    padding: 30px;
 		}
 
+
 		@media screen and (min-width: 64em) {
 			
 			img {
@@ -70,12 +71,22 @@
 
 			}
 
+			p {
+			    width: 75%;
+	    		float: right;
+			}			
+
 		@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 			
 			img {
-		   		max-width: 40%;
+		   		max-width: 50%;
 
 			}
+
+			p {
+			    width: 50%;
+	    		float: right;
+			}			
 		}
 	}
 	
@@ -95,7 +106,7 @@
 
 		.wcorg-sponsor {
 			margin: 40px;
-			
+
 		}
 	}
 }

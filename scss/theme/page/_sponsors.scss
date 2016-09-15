@@ -105,7 +105,8 @@
 		}
 
 		.wcorg-sponsor {
-			margin: 40px;
+			padding: 40px;
+			@include clearfix;
 
 		}
 	}

@@ -57,7 +57,27 @@ div.v-center.blueBox {
 
 
 #tix {
+
 	padding-top: 0px !important;
+
+	a#tix-coupon-link {
+		background-color: $accent;
+		color: #fff;
+	    padding: 0 1rem;
+	    border-radius: 2rem;
+	    margin: .5rem 0 0;
+	    
+	    border: 1px solid #fff;
+	    box-shadow: none;
+	    padding: 8px !important;
+	    text-decoration: none;
+	}
+
+	a#tix-coupon-link:hover {
+		transition: 250ms background-color ease-in-out;
+
+	}
+
 }
 
 

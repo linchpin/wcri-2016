@@ -65,16 +65,17 @@
 
 
 		@media screen and (min-width: 64em) {
-			
+
 			img {
-		   		max-width: 25%;
+				max-width: 25%;
 
 			}
 
 			p {
-			    width: 75%;
-	    		float: right;
-			}			
+				width: 75%;
+				float: right;
+			}
+		}
 
 		@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 			
@@ -91,7 +92,6 @@
 	}
 	
 	[class*="wcorg-sponsor-level"] {
-
 		border: solid 2px $fountain-blue;
 		margin-top: 50px;
 			
@@ -101,33 +101,17 @@
 		    margin: 0px;
 		    padding: 20px;
 		    text-align: center;
-
 		}
 
 		.wcorg-sponsor {
 			padding: 40px;
 			@include clearfix;
-
 		}
 	}
 }
 
 .wcorg-sponsor-description {
-
 	p {
 		text-align: left;
-
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-

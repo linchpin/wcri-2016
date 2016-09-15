@@ -31,7 +31,7 @@ body {
 
 	@media screen and ( min-width: $medium-up ) {
 		&:not(.home) {
-			padding-top: $nav-height + 16px;
+			padding-top: $nav-height;
 		}
 	}
 }
@@ -77,8 +77,13 @@ input[type="submit"] {
 
 	> .entry-title {
 		@include row;
+		padding: 0 1rem;
 
-		margin-bottom: 109px;
+		margin-bottom: 99px;
+
+		@media screen and ( max-width: 1420px ) {
+			padding: 0 4.5455%;
+		}
 	}
 }
 

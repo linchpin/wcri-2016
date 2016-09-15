@@ -86,9 +86,3 @@ input[type="submit"] {
 		}
 	}
 }
-
-#tix-attendees {
-	li {
-		@include tix-gravatar-layout;
-	}
-}

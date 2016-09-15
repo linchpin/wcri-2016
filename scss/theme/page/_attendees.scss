@@ -1,0 +1,59 @@
+$size: 96px;
+$gap: 40px;
+$title_class: 'tix-attendee-name';
+
+#tix-attendees {
+	li {
+		height: $size + $gap * 2;
+		margin-bottom: 60px;
+		text-align: center;
+
+		position: relative;
+
+		.avatar {
+			border-radius: 50%;
+			box-shadow: 0 0 0 4px #f2f2f2, 0 0 0 8px $primary;
+			float: none;
+			display: block;
+			margin: $gap + 8px auto 8px;
+			height: $size;
+			width: $size;
+		}
+
+		.tix-field {
+			margin-left: 0;
+		}
+
+		.#{$title_class} {
+			font: {
+				family: $headline-font;
+				size: 1.25rem;
+			};
+			margin: 0;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			height: $size + $gap + 8px;
+
+			&:after {
+				content: '';
+
+				position: absolute;
+				height: $size;
+				width: $size;
+				bottom: 0;
+				left: 50%;
+				margin-left: -$size/2;
+				border-radius: 50%;
+				background: {
+					image: url('https://2016.rhodeisland.wordcamp.org/files/2016/08/waves-full.png');
+					position: -155px 65px;
+					repeat: no-repeat;
+					size: 528px 44px;
+				};
+			}
+		}
+	}
+}

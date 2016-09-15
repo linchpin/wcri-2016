@@ -1,0 +1,64 @@
+/**
+ * 01. Speaker List
+ * 02. Speaker Bio
+ */
+
+
+/**
+ * 01. Speaker List
+ */
+.speaker-gravatar-list {
+	display: none;
+}
+
+
+/**
+ * 02. Speaker Bio
+ */
+.speakers {
+	@media screen and ( min-width: $large-up ) {
+		.grid_6 {
+			float: left;
+			padding: 0 2rem;
+			width: 50%;
+		}
+	}
+}
+
+.speaker-bio {
+	margin: 0;
+	min-height: 126px;
+	position: relative;
+
+	&:before {
+		content: '';
+
+		background: {
+			image: url('https://2016.rhodeisland.wordcamp.org/files/2016/08/waves-full.png');
+			position: -155px 70px;
+			repeat: no-repeat;
+			size: 528px 44px;
+		};
+		border-radius: 50%;
+		height: 102px;
+		width: 102px;
+
+		position: absolute;
+		left: 8px;
+		top: 8px;
+
+		z-index: 1;
+	}
+
+	.avatar {
+		border-radius: 50%;
+		box-shadow: 0 0 0 4px $light-grey, 0 0 0 8px $primary;
+		float: left;
+		margin: {
+			left: 8px;
+			top: 8px;
+			right: 32px;
+			bottom: 24px;
+		};
+	}
+}

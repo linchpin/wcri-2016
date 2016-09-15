@@ -33,7 +33,7 @@ $table-border: $dark;
 	height: inherit;
 
 	.tickets-message {
-		background-color: #59b3b5;
+		background-color: $fountain-blue;
 		height: inherit; 
 	    color: #fff;
 	    position: relative;
@@ -62,12 +62,12 @@ div.v-center.blueBox {
 
 	a#tix-coupon-link {
 		background-color: $accent;
-		color: #fff;
+		color: $light-grey;
 	    padding: 0 1rem;
 	    border-radius: 2rem;
 	    margin: .5rem 0 0;
 	    
-	    border: 1px solid #fff;
+	    border: 1px solid $light-grey;
 	    box-shadow: none;
 	    padding: 8px !important;
 	    text-decoration: none;

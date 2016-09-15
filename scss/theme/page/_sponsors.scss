@@ -63,12 +63,6 @@
 		    padding: 30px;
 		}
 
-		h3 {	
-			padding-left: 0px;
-			text-align:center
-
-		}
-
 
 		@media screen and (min-width: 64em) {
 
@@ -82,22 +76,12 @@
 				float: right;
 			}
 
-			h3 {
-				padding-left: 25%;
-				text-align: left;
-
-			}
 		}
 
 		@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 			
 			img {
 		   		max-width: 50%;
-
-			}
-
-			h3 {
-				padding-left: 50%;
 
 			}
 			
@@ -119,6 +103,32 @@
 		.wcorg-sponsor {
 			padding: 0px 40px;
 			@include clearfix;
+
+			h3 {	
+				padding-left: 0px;
+				text-align:center
+			}
+
+
+				@media screen and (min-width: 64em) {
+
+					h3 {
+						padding-left: 25%;
+						text-align: left;
+
+					}
+				}
+
+
+				@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+					h3 {
+						padding-left: 50%;
+
+					}
+			
+				}
+
 		}
 	}
 }

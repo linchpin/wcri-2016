@@ -93,7 +93,7 @@
 	
 	[class*="wcorg-sponsor-level"] {
 		border: solid 2px $fountain-blue;
-		margin-top: 50px;
+		margin-bottom: 50px;
 			
 		h2 {
 			background-color: $fountain-blue;
@@ -104,7 +104,7 @@
 		}
 
 		.wcorg-sponsor {
-			padding: 40px;
+			padding: 0px 40px;
 			@include clearfix;
 		}
 	}

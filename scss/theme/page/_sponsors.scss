@@ -51,14 +51,14 @@
  * 03. Sponsor Table
  */
 
-.sponsors {
+.wcorg-sponsors {
 	
-	.sponsor-level {
+	[class=*"wcorg-sponsor-level"] {
 
 		border: solid 2px $fountain-blue;
 		margin-top: 50px;
 			
-		h2.sponsor-level-title {
+		h2 {
 
 			color: $light-grey;
 		    margin: 0px;
@@ -66,7 +66,7 @@
 
 		}
 
-		.sponsor {
+		.wcorg-sponsor {
 			margin-top: 0px !important;
 
 		}
@@ -74,7 +74,7 @@
 	}
 }
 
-.sponsor-description {
+.wcorg-sponsor-description {
 	p {
 		text-align: left;
 

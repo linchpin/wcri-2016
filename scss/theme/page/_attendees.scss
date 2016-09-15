@@ -3,6 +3,21 @@ $gap: 40px;
 $title_class: 'tix-attendee-name';
 
 #tix-attendees {
+	.tix-columns-3 li {
+		@media screen {
+			width: 100%;
+		}
+
+		@media screen and ( min-width: 440px ) {
+			width: 50%;
+		}
+
+		@media screen and ( min-width: $medium-up ) {
+			width: 33.333333%;
+			width: calc(100%/3);
+		}
+	}
+
 	li {
 		height: $size + $gap * 2;
 		margin-bottom: 60px;

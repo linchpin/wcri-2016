@@ -152,7 +152,7 @@ body.single-wcb_sponsor {
 
 		.wp-post-image {
 			height: 100%;
-			max-height: 120px;
+			max-height: 85px;
 			width: auto;
 
 			position: absolute;
@@ -162,7 +162,8 @@ body.single-wcb_sponsor {
 		}
 
 		.entry-content {
-			padding-top: 40px;
+			@include row;
+			padding: 40px 1rem 0;
 		}
 	}
 }

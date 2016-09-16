@@ -96,6 +96,8 @@
 		.menu-main-menu-container {
 			height: ( ($nav-height - 12px)/2 ) - 6px;
 			line-height: ( ($nav-height - 12px)/2 ) - 6px;
+
+
 		}
 
 		.menu {
@@ -149,6 +151,10 @@
 			color: $dark;
 			font-size: .875rem;
 			padding: 0;
+		}
+
+		a:hover {
+			color: $darkest;
 		}
 	}
 

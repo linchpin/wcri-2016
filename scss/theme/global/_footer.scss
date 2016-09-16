@@ -192,6 +192,18 @@ h4.sponsor-level-title {
 		width: 33.333333%;
 		width: calc(100% * 4 / 12);
 	}
+
+	[class*="TweetAuthor-"], 
+	p.timeline-Tweet-text {
+		color: $light-grey;
+	}
+
+	p.timeline-Tweet-text{
+		a {
+			color: $light;
+		}
+	}
+
 }
 
 #footer-widget-1,
@@ -278,7 +290,8 @@ h4.sponsor-level-title {
 	text-align: center;
 	color: #59b3b5;
 	background-color: transparent;
-	font-size: 15px;
+	font-size: 20px;
+	line-height: 20px;
 }
 
 .sponsor-level {

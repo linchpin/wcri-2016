@@ -7,8 +7,14 @@
  * 01. Single Blog Post
  */
 body.single-post {
-	.entry-header {
-		background-position: 0 50%;
+	#content > article > .entry-header {
+		> .entry-title {
+			margin-bottom: 0;
+		}
+
+		> .entry-meta {
+			margin-bottom: 99px;
+		}
 	}
 
 	.entry-content,

@@ -1,5 +1,6 @@
 /**
  * 01. Tickets Table
+ * 02. Tickets Form
  */
 
 
@@ -121,7 +122,14 @@ $table-border: $dark;
 
 }
 
+/**
+ * 02. Tickets Form
+ */
 
+
+.tix-has-dynamic-receipts {
+	@inlcude row;
+}
 
 
 

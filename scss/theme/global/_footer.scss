@@ -197,25 +197,17 @@ h4.sponsor-level-title {
 		width: calc(100% * 4 / 12);
 	}
 
-	[class*="TweetAuthor-"], 
-	p.timeline-Tweet-text {
-		color: $light-grey;
-	}
-
-	p.timeline-Tweet-text{
-		a {
-			color: $light;
-		}
-	}
-
 }
 
 #footer-widget-1,
 #footer-widget-2 {
-	@media screen and ( min-width: $medium-up ) {
-		display: table-cell;
-		float: none !important;
-	}
+
+	padding-top:100px;
+	
+		@media screen and ( min-width: $medium-up ) {
+			display: table-cell;
+			float: none !important;
+		}
 }
 
 #footer-widget-1,
@@ -227,6 +219,7 @@ h4.sponsor-level-title {
 
 #footer-widget-4 {
 	width: 100%;
+	padding-top: 100px;
 }
 
 .site-footer {

@@ -1,0 +1,25 @@
+/**
+ * 01. Single Blog Post
+ */
+
+
+/**
+ * 01. Single Blog Post
+ */
+body.single-post {
+	.entry-header {
+		background-position: 0 50%;
+	}
+
+	.entry-content,
+	.entry-meta,
+	#nav-below,
+	#comments {
+		@include row;
+
+		padding: {
+			left: 1rem;
+			right: 1rem;
+		};
+	}
+}

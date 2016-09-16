@@ -8,8 +8,13 @@
  */
 
 .locationQ {
-	color: black;
+	color: $dark;
 	font-style: normal !important;
 	margin-top: 0 !important;
 	margin-bottom: 10px !important;
+}
+
+.googlemaps {
+	border: 4px solid $light;
+	box-shadow: 0 0 0 4px $primary;
 }

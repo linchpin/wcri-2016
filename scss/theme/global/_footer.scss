@@ -173,11 +173,13 @@ h4.sponsor-level-title {
 #footer-widgets {
 	@include row;
 
-	padding: 0 2rem;
+	padding: 0 1rem;
 }
 
 #footer-widget-1 {
 	background: $light;
+	border-radius: 1.5rem 0 0 1.5rem;
+	box-shadow: 0 0 0 8px $light;
 
 	@media screen and ( min-width: $medium-up ) {
 		width: 66.666666%;
@@ -187,6 +189,8 @@ h4.sponsor-level-title {
 
 #footer-widget-2 {
 	background: $dark;
+	border-radius: 0 1.5rem 1.5rem 0;
+	box-shadow: 0 0 0 4px $light-grey, 0 0 0 8px $light;
 
 	@media screen and ( min-width: $medium-up ) {
 		width: 33.333333%;

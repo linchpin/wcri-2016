@@ -2,6 +2,7 @@
  * 01. Sponsor List
  * 02. Single Sponsor
  * 03. Sponsor Table
+ * 04. Single Sponsor Page
  */
 
 
@@ -137,5 +138,31 @@
 .wcorg-sponsor-description {
 	p {
 		text-align: left;
+	}
+}
+
+
+/**
+ * 04. Single Sponsor Page
+ */
+body.single-wcb_sponsor {
+	#content {
+		position: relative;
+		padding-bottom: 240px;
+
+		.wp-post-image {
+			height: 100%;
+			max-height: 120px;
+			width: auto;
+
+			position: absolute;
+			bottom: 80px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.entry-content {
+			padding-top: 40px;
+		}
 	}
 }

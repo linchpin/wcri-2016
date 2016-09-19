@@ -84,3 +84,15 @@ table {
 		content: initial;
 	}
 }
+
+
+
+.wcb_session {
+	
+	.entry-content {
+		@include row;
+	}
+}
+
+
+

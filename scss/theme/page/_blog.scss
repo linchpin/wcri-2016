@@ -35,3 +35,15 @@ body.single-post {
 		@include row;
 	}
 }
+
+.error404 {	
+	.entry-content {
+		@include row;
+	}
+}
+
+.type-post {
+	.entry-content {
+		@include row;
+	}
+}

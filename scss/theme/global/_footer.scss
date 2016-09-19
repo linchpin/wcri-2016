@@ -2,6 +2,7 @@
  * 01. Base
  * 02. Home
  * 03. Sponsors
+ * 04. Footer Menu
  */
 
 
@@ -354,6 +355,32 @@ h4.sponsor-level-title {
 	}
 
 }
+
+
+/**
+ * 04. Footer Menu 
+ */
+
+menu-footer-menu-container {
+	
+	ul {
+		list-style: none;
+		text-align: center;
+
+		li { 
+			display: inline;
+			padding-right: 10px;
+			color: $accent;
+			text-decoration: none;
+		}
+
+		li:hover {
+			color: $fountain-blue;
+
+		}
+	}
+}
+
 
 
 

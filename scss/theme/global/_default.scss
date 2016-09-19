@@ -205,6 +205,10 @@ h3 {
 	font-weight: 400;
 }
 
+.entry-content {
+	@include row;
+}
+
 .entry-content ul,.entry-content ol,.entry-summary ul,.entry-summary ol {
 	margin-left: 40px;
 }

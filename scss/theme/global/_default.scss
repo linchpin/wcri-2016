@@ -265,7 +265,13 @@ input[type="submit"] {
 	border-color: rgba(58,135,145,0.2);
 }
 
-.error404 {	
+.not-found {	
+	.entry-content {
+		@include row;
+	}
+}
+
+.type-page {
 	.entry-content {
 		@include row;
 	}

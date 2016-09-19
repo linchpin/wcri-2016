@@ -264,3 +264,12 @@ input[type="submit"] {
 	border-color: #3a8791;
 	border-color: rgba(58,135,145,0.2);
 }
+
+.error404 {
+	
+	.entry-content {
+		@include row;
+
+	}
+
+}

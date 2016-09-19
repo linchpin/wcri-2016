@@ -9,3 +9,9 @@
 	'blog',
 	'organizers'
 ;
+
+.type-page {
+	.entry-content {
+		@include row;
+	}
+}

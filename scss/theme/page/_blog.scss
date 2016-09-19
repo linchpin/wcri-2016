@@ -30,19 +30,29 @@ body.single-post {
 	}
 }
 
-.type-post {
+.type-post.category-wordcamp-overview {
 	.entry-content {
 		@include row;
+
+
+		.entry-title {
+			h1 {
+				margin-bottom: 10px !important;
+			}
+		}
+
+		.cat-links {
+			display: none;
+		}
+
+		.entry-meta {
+			@include row;
+			margin-bottom: 99px;
+		}
 	}
 }
 
 .error404 {	
-	.entry-content {
-		@include row;
-	}
-}
-
-.type-page {
 	.entry-content {
 		@include row;
 	}

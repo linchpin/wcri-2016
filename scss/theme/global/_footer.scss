@@ -367,16 +367,19 @@ h4.sponsor-level-title {
 		list-style: none;
 		text-align: center;
 
-		li { 
-			display: inline;
-			padding-right: 10px;
-			color: $accent;
-			text-decoration: none;
+		li {
+			a { 
+				display: inline;
+				padding-right: 10px;
+				color: $accent;
+				text-decoration: none;
+			}
 		}
 
-		li:hover {
-			color: $fountain-blue;
-
+		li {
+			a:hover {
+				color: $fountain-blue;
+			}
 		}
 	}
 }

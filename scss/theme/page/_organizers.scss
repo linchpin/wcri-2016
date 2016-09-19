@@ -1,0 +1,67 @@
+.organizers {
+	@media screen and ( min-width: $large-up ) {
+		.grid_6 {
+			float: left;
+			padding: 0 2rem;
+			width: 50%;
+		}
+	}
+}
+
+.wcorg-organizer-description {
+	margin: 0;
+	min-height: 214px;
+	position: relative;
+
+	&:before {
+		content: '';
+
+		background: {
+			image: url('https://2016.rhodeisland.wordcamp.org/files/2016/08/waves-full@2x.png');
+			position: -185px 151px;
+			repeat: no-repeat;
+			size: 792px 66px;
+		};
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
+
+		position: absolute;
+		left: 8px;
+		top: 8px;
+
+		z-index: 1;
+	}
+
+	.avatar {
+		border-radius: 50%;
+		box-shadow: 0 0 0 4px $light-grey, 0 0 0 8px $primary;
+		height: 200px;
+		width: 200px;
+		float: left;
+		margin: {
+			left: 8px;
+			top: 8px;
+			right: 32px;
+			bottom: 24px;
+		};
+	}
+
+	@media screen and ( max-width: 540px ) {
+		min-height: 126px;
+
+		&:before {
+			background: {
+				position: -155px 70px;
+				size: 528px 44px;
+			};
+			height: 102px;
+			width: 102px;
+		}
+
+		.avatar {
+			height: 126px;
+			width: 126px;
+		}
+	}
+}

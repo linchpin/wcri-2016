@@ -34,22 +34,22 @@ body.single-post {
 	.entry-content {
 		@include row;
 
-
 		.entry-title {
 			h1 {
 				margin-bottom: 10px !important;
 			}
 		}
+	}
 
+	.entry-meta {
+		@include row;
+		margin-bottom: 99px;
+		
 		.cat-links {
 			display: none;
 		}
-
-		.entry-meta {
-			@include row;
-			margin-bottom: 99px;
-		}
 	}
+		
 }
 
 .error404 {	

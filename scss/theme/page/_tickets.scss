@@ -33,6 +33,7 @@ $table-border: $dark;
 
 	overflow: hidden;
 	height: inherit;
+	padding-top: 40px;
 
 	.tickets-message {
 		background-color: $fountain-blue;
@@ -102,12 +103,25 @@ $table-border: $dark;
 
 	padding-top: 0px !important;
 
+	.tix-js {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.tix_tickets_table {
+		tr {
+	   		font-size: 13px;
+		}
+	}
+
 	a#tix-coupon-link {
 		background-color: $accent;
 		color: $light-grey;
 	    padding: 0 1rem;
 	    border-radius: 2rem;
 	    margin: .5rem 0 0;
+	    font-size: 13px;
 	    
 	    border: 1px solid $light-grey;
 	    box-shadow: none;
@@ -125,7 +139,6 @@ $table-border: $dark;
 /**
  * 02. Tickets Form
  */
-
 
 .tix-has-dynamic-receipts {
 	@include row;

@@ -33,9 +33,12 @@ body.single-post {
 .type-post {
 	.entry-content {
 		@include row;
+	}
 
+	.entry-header {
 		h1.entry-title {
 			margin-bottom: 10px !important;
+			padding: 0px !important; 
 		}
 	}
 

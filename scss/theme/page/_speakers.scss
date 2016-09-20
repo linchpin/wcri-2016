@@ -32,6 +32,9 @@
 
 	&:before {
 		content: '';
+		background-position: -20px 100px;
+		height: 126px;
+		width: 126px;
 
 		background: {
 			image: url('https://2016.rhodeisland.wordcamp.org/files/2016/08/waves-full@2x.png');

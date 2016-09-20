@@ -31,8 +31,10 @@
 	position: relative;
 
 	&:before {
+
+		@media screen {
 		content: '';
-		background-position: -20px 100px;
+		background-position: -200px 90px;
 		height: 126px;
 		width: 126px;
 
@@ -44,13 +46,23 @@
 		};
 		border-radius: 50%;
 		height: 200px;
-		width: 200px;
+		width: 200px; 
 
 		position: absolute;
 		left: 8px;
 		top: 8px;
 
 		z-index: 1;
+		}
+
+		@media screen and ( min-width: $medium-up) {
+			background-position: -155px 70px;
+			height: 126px;
+			width: 126px;
+
+		}
+
+
 	}
 
 	.avatar {

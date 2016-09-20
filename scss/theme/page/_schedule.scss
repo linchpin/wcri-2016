@@ -90,6 +90,11 @@ table {
 .wcb_session {
 	.entry-content {
 		@include row;
+		padding: 0 1rem;
+
+		@media screen and ( min-width: $medium-up ) {
+			padding: 0px;
+		}
 	}
 }
 

@@ -31,14 +31,25 @@ body.single-post {
 }
 
 .type-post {
+
 	.entry-content {
 		@include row;
+		padding: 0 1rem;
+
+		@media screen and ( min-width: $medium-up ) {
+			padding: 0px;
+		}
 	}
 
 	.entry-header {
+		padding: 0 1rem;
+
+		@media screen and ( min-width: $medium-up ) {
+			padding: 0px;
+		}
+		
 		h1.entry-title {
 			margin-bottom: 10px !important;
-			padding: 0px !important; 
 		}
 	}
 

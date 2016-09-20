@@ -281,6 +281,7 @@
 				bottom: 0;
 
 				transition: 300ms left $global-easing;
+				z-index: 9;
 
 				.menu {
 					display: block !important;

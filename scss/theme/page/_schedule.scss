@@ -86,8 +86,23 @@ table {
 }
 
 
+.type-page {
+	padding: 0 1rem;
+
+	@media screen and ( min-width: $medium-up ) {
+		padding: 0px;
+	}
+}
 
 .wcb_session {
+	.entry-header {
+		padding: 0 1rem;
+
+		@media screen and ( min-width: $medium-up ) {
+			padding: 0px;
+		}
+	}
+
 	.entry-content {
 		@include row;
 		padding: 0 1rem;
@@ -97,6 +112,7 @@ table {
 		}
 	}
 }
+
 
 .wcorg-session-description {
 	.googlemaps {

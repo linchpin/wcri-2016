@@ -87,8 +87,13 @@ input[type="submit"] {
 
 		margin-bottom: 99px;
 
-		@media screen and ( max-width: 1420px ) {
-			padding: 3% 4.5455%;
+		@media screen {
+			padding: 5% 4.5455%;
 		}
+
+		@media screen and ( min-width: $medium-up ) {
+			padding: 0 4.5455%;
+		}
+		
 	}
 }

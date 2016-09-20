@@ -260,7 +260,8 @@
 
 				&.toggled-on {
 					position: fixed;
-					right: 0;
+					top: 25px;
+					right: 20px;
 
 					~ .menu-main-menu-container,
 					~ .menu-primary-navigation-container {

@@ -34,10 +34,8 @@ body.single-post {
 	.entry-content {
 		@include row;
 
-		.entry-title {
-			h1 {
-				margin-bottom: 10px !important;
-			}
+		h1.entry-title {
+			margin-bottom: 10px !important;
 		}
 	}
 
@@ -45,7 +43,7 @@ body.single-post {
 		@include row;
 		margin-bottom: 99px;
 		
-		.cat-links {
+		.cat-links, .sep, .comments-link {
 			display: none;
 		}
 	}

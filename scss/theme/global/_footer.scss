@@ -3,6 +3,7 @@
  * 02. Home
  * 03. Sponsors
  * 04. Footer Menu
+ * 05. Social Media
  */
 
 
@@ -382,6 +383,24 @@ h4.sponsor-level-title {
 		li {
 			a:hover {
 				color: $fountain-blue;
+			}
+		}
+	}
+}
+
+
+
+/**
+ * 05. Social Media
+ */
+
+#wpcom_social_media_icons_widget-2 {
+	text-align: center;
+
+	ul {
+		li {
+			a.genericon:before {
+				font-size: 25px;
 			}
 		}
 	}

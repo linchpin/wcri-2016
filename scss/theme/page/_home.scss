@@ -350,7 +350,7 @@ body.home {
 
 #speakers-callout {
 	background-color: white;
-	border: 10px solid #f2f2f2;
+	border: 10px solid $light-grey;
 	padding: {
 		top: 2rem;
 		bottom: 2rem;
@@ -399,7 +399,7 @@ body.home {
 			top: 0;
 			bottom: 0;
 			z-index: 1;
-			border: 10px solid #f2f2f2;
+			border: 10px solid $light-grey;
 		}
 
 		*:not(.overlay) {

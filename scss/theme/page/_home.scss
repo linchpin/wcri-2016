@@ -95,6 +95,12 @@ body.home {
 		letter-spacing: 2px;
 	}
 
+	.button:hover {
+		background-color: $accent;
+	}
+
+
+
 	@media screen and ( max-width: 767px ) {
 		top: 60%;
 
@@ -349,6 +355,8 @@ body.home {
 		top: 2rem;
 		bottom: 2rem;
 	};
+
+	margin-bottom: 2rem;
 
 	h2, h3 {
 		margin-top: 0;

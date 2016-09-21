@@ -178,7 +178,6 @@ h4.sponsor-level-title {
  */
 #footer-widgets {
 	@include row;
-	margin-top: 100px;
 	padding: 0 1rem;
 
 	@media screen and ( min-width: $medium-up ) {

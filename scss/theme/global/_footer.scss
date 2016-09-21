@@ -18,10 +18,6 @@
 	padding: 0;
 }
 
-#footer-widgets {
-	@include row;
-	padding: 0 2rem;
-}
 
 #footer-widget-1,
 #footer-widget-2,
@@ -177,11 +173,12 @@ h4.sponsor-level-title {
  */
 #footer-widgets {
 	@include row;
-	margin: 100px 50px 0px 50px;
-	padding: 0 1rem;
+	padding: 100px 50px 0px 50px;
+	margin: 0 auto;
 
 	@media screen and ( min-width: $large-up ) {
-		margin: 100px auto;
+		padding: 100px 0 0 0;
+
 	}
 
 }

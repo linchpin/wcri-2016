@@ -315,11 +315,10 @@ body.home {
 }
 
 #homepage-buckets {
-	margin-bottom: 15px;
 
 	.bucket {
 		background: white;
-		border: 15px solid $light-grey;
+		border: 10px solid $light-grey;
 
 		@media screen and ( min-width: 1000px ) {
 			display: table-cell;
@@ -351,12 +350,11 @@ body.home {
 
 #speakers-callout {
 	background-color: white;
+	border: 10px solid #f2f2f2;
 	padding: {
 		top: 2rem;
 		bottom: 2rem;
 	};
-
-	margin-bottom: 2rem;
 
 	h2, h3 {
 		margin-top: 0;
@@ -394,12 +392,14 @@ body.home {
 		.overlay {
 			background-color: rgba( white, .85 );
 
+			
 			position: absolute;
 			left: 0;
 			right: 0;
 			top: 0;
 			bottom: 0;
 			z-index: 1;
+			border: 10px solid #f2f2f2;
 		}
 
 		*:not(.overlay) {

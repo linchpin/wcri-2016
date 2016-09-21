@@ -59,7 +59,7 @@
 	    border-bottom: solid 1px $light-grey;
 
 		img {
-		    width: 100%;
+		    max-width: 100%;
 		    padding: 30px;
 		}
 
@@ -67,7 +67,7 @@
 		@media screen and (min-width: 64em) {
 
 			img {
-				width: 25%;
+				max-width: 25%;
 			}
 
 			p {
@@ -81,7 +81,7 @@
 			
 			img {
 				float: left;
-		   		width: 50%;
+		   		max-width: 50%;
 			}
 
 			p {

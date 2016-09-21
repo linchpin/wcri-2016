@@ -20,7 +20,6 @@
 
 #footer-widgets {
 	@include row;
-	margin: 100px 50px 0px 50px;
 	padding: 0 2rem;
 }
 
@@ -178,10 +177,11 @@ h4.sponsor-level-title {
  */
 #footer-widgets {
 	@include row;
+	margin: 100px 50px 0px 50px;
 	padding: 0 1rem;
 
 	@media screen and ( min-width: $medium-up ) {
-		margin-top: 100px;
+		margin: 100px 0px 0px 0px;
 	}
 
 }

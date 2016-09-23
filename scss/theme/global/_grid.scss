@@ -4,6 +4,14 @@
 			width: 100% * ($i/12);
 		}
 	}
+
+	.small-centered {
+		float: none;
+		margin: {
+			left: auto;
+			right: auto;
+		};
+	}
 }
 
 @media screen and ( min-width: $medium-up ) {
@@ -12,6 +20,14 @@
 			width: 100% * ($i/12);
 		}
 	}
+
+	.medium-centered {
+		float: none;
+		margin: {
+			left: auto;
+			right: auto;
+		};
+	}
 }
 
 @media screen and ( min-width: $large-up ) {
@@ -19,6 +35,14 @@
 		.large-#{$i} {
 			width: 100% * ($i/12);
 		}
+	}
+
+	.large-centered {
+		float: none;
+		margin: {
+			left: auto;
+			right: auto;
+		};
 	}
 }
 
